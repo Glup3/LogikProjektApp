@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="ShapesTestApp.CirclesUI"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ShapesTestApp"
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="600" Background="White">
+    <Canvas x:Name="Canva_All" VerticalAlignment="Center" >
+
+        <Path x:Name="links" Stroke="Black" Opacity="1">
+            <Path.Data>
+                <EllipseGeometry Center="200,0" RadiusX="170" RadiusY="170" x:Name="kreis1"/>
+            </Path.Data>
+        </Path>
+        <Path x:Name="rechts" Stroke="Black" Opacity="1">
+            <Path.Data>
+                <EllipseGeometry Center="380,0" RadiusX="170" RadiusY="170" x:Name="kreis2"/>
+            </Path.Data>
+        </Path>
+        <Path x:Name="mitte" Stroke="Black" Opacity="1" />
+
+        <!-- linke Kreishälfte -->
+        <Canvas Name="Canva_Left">
+            <TextBlock FontSize="20" Canvas.Left="083" Canvas.Top="022"  Height="25" Width="20"   FontFamily="Ubuntu" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock FontSize="20" Canvas.Left="083" Canvas.Top="-62"  Height="25" Width="20"   FontFamily="Ubuntu" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock FontSize="20" Canvas.Left="133" Canvas.Top="-105" Height="25" Width="20"   FontFamily="Ubuntu" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock FontSize="20" Canvas.Left="106" Canvas.Top="076"  Height="25" Width="20"   FontFamily="Ubuntu" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock FontSize="20" Canvas.Left="173" Canvas.Top="060"  Height="25" Width="20"   FontFamily="Ubuntu" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock FontSize="20" Canvas.Left="148" Canvas.Top="-49"  Height="25" Width="20"   FontFamily="Ubuntu" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock FontSize="20" Canvas.Left="179" Canvas.Top="119"  Height="25" Width="20"   FontFamily="Ubuntu" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock FontSize="20" Canvas.Left="195" Canvas.Top="-128" Height="25" Width="20"   FontFamily="Ubuntu" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock FontSize="20" Canvas.Left="165" Canvas.Top="009"  Height="25" Width="20"   FontFamily="Ubuntu" TextAlignment="Center" FontWeight="Bold"/>
+        </Canvas>
+
+        <!-- mitte -->
+        <Canvas Name="Canva_Center">
+            <TextBlock FontSize="20" Canvas.Left="311" Canvas.Top="-92" Height="25" Width="20"   FontFamily="Ubuntu" TextAlignment="Center" FontWeight="Bold" />
+            <TextBlock FontSize="20" Canvas.Left="295" Canvas.Top="-36" Height="25" Width="20"   FontFamily="Ubuntu" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock FontSize="20" Canvas.Left="238" Canvas.Top="-23" Height="25" Width="20"   FontFamily="Ubuntu" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock FontSize="20" Canvas.Left="311" Canvas.Top="016" Height="25" Width="20"   FontFamily="Ubuntu" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock FontSize="20" Canvas.Left="265" Canvas.Top="-77" Height="25" Width="20"   FontFamily="Ubuntu" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock FontSize="20" Canvas.Left="245" Canvas.Top="035" Height="25" Width="20"   FontFamily="Ubuntu" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock FontSize="20" Canvas.Left="318" Canvas.Top="066" Height="25" Width="20"   FontFamily="Ubuntu" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock FontSize="20" Canvas.Left="265" Canvas.Top="089" Height="25" Width="20"   FontFamily="Ubuntu" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock FontSize="20" Canvas.Left="339" Canvas.Top="-36" Height="25" Width="20"   FontFamily="Ubuntu" TextAlignment="Center" FontWeight="Bold"/>
+        </Canvas>
+
+        <!-- rechte Kreishälfte -->
+        <Canvas Name="Canva_Right">
+            <TextBlock FontSize="20" Canvas.Left="435" Canvas.Top="-141" Height="25" Width="20"   FontFamily="Ubuntu" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock FontSize="20" Canvas.Left="414" Canvas.Top="-31"  Height="25" Width="20"   FontFamily="Ubuntu" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock FontSize="20" Canvas.Left="491" Canvas.Top="-36"  Height="25" Width="20"   FontFamily="Ubuntu" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock FontSize="20" Canvas.Left="467" Canvas.Top="089"  Height="25" Width="20"   FontFamily="Ubuntu" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock FontSize="20" Canvas.Left="385" Canvas.Top="106"  Height="25" Width="20"   FontFamily="Ubuntu" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock FontSize="20" Canvas.Left="476" Canvas.Top="027"  Height="25" Width="20"   FontFamily="Ubuntu" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock FontSize="20" Canvas.Left="476" Canvas.Top="-77"  Height="25" Width="20"   FontFamily="Ubuntu" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock FontSize="20" Canvas.Left="420" Canvas.Top="040"  Height="25" Width="20"   FontFamily="Ubuntu" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock FontSize="20" Canvas.Left="398" Canvas.Top="-100" Height="25" Width="20"   FontFamily="Ubuntu" TextAlignment="Center" FontWeight="Bold"/>
+        </Canvas>
+        <!-- Bezeichnung der Menge A und B-->
+        <Label Content="A" Canvas.Left="156" Canvas.Top="-241" Height="46" Width="68" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Ubuntu" FontSize="36"/>
+        <Label Content="B" Canvas.Left="356" Canvas.Top="-241" Height="46" Width="68" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Ubuntu" FontSize="36"/>
+
+    </Canvas>
+</UserControl>
