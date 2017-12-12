@@ -8,17 +8,17 @@
              d:DesignHeight="700" d:DesignWidth="600" Background="White">
     <Canvas x:Name="Canva_All" VerticalAlignment="Center" >
 
-        <Path x:Name="links" Stroke="Black" Opacity="1">
+        <Path x:Name="links" Stroke="Black" Opacity="1" StrokeThickness="4">
             <Path.Data>
                 <EllipseGeometry Center="200,0" RadiusX="170" RadiusY="170" x:Name="kreis1"/>
             </Path.Data>
         </Path>
-        <Path x:Name="rechts" Stroke="Black" Opacity="1">
+        <Path x:Name="rechts" Stroke="Black" Opacity="1" StrokeThickness="4">
             <Path.Data>
                 <EllipseGeometry Center="380,0" RadiusX="170" RadiusY="170" x:Name="kreis2"/>
             </Path.Data>
         </Path>
-        <Path x:Name="mitte" Stroke="Black" Opacity="1" />
+        <Path x:Name="mitte" Stroke="Black" Opacity="1" StrokeThickness="4"/>
 
         <!-- linke Kreishälfte -->
         <Canvas Name="Canva_Left">
